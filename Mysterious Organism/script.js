@@ -103,26 +103,4 @@ const survivors30 = () => {
     return arr;
 };
 
-//find most related instances of pAequor.
-const findMostRelated = () => {
-    const survivors = survivors30();
-    for (let i = 0; i < survivors.length; i++) {
-
-        for (let j = 0; j < survivors.length; j++) {
-            survivors[i].compareDna(survivors[j]);
-            
-            //if (survivors[i].specimenNum != survivors[j].specimenNum && )
-
-        }
-    }
-};
-
-const dnaTest1 = pAequorFactory(1, mockUpStrand());
-const dnaTest2 = pAequorFactory(2, mockUpStrand());
-//console.log(dnaTest1)
-//console.log(dnaTest1.compareDna(dnaTest2))
-console.log(findMostRelated())
-
-
-
 
